@@ -13,31 +13,23 @@ Python, Matplotlib, NumPy, Scikit-Learn, Seaborn, Plotly, Datetime, Math
 ### Data Distribution
 Top 5 Stockcodes:
 
-stockcode.png
+![](photos/top5stockcode.png)
 
 Top 5 Countries:
 
-countries.png
+![](photos/top5countries.png)
 
 Orders per Day of the Week:
 
-weeklyorders.png
+![](photos/weeklyOrders.png)
 
 Orders per Month of the Year:
 
-monthlyorders.png
+![](photos/monthlyorders.png)
 
 Orders Based on the Busiest Working Hours:
 
-hourlyorders.png
-
-Number of Items Per Order:
-
-noItemsPerOrder.png
-
-Number of Items Per Customer:
-
-noItemsPerCustomer.png
+![](photos/hourlyorders.png)
 
 ## Feature Engineering
 For Feature engineering, we're going to use RFM Model.
@@ -50,11 +42,11 @@ Monetary(M): This metric calculates the total spending of a customer over a spec
 
 All features, including Recency, Frequency, and Monetary value, exhibit varying ranges, necessitating standardization. Specifically, the Monetary value feature can span a broad spectrum of values. To ensure that the inputs to our clustering algorithm are well-scaled and uniformly transformed, we will apply a logarithmic transformation to standardize these features.
 
-log_recency.png
+![](photos/logRecency.png)
 
-log_frequency.png
+![](photos/logFrequency.png)
 
-log_monetary.png
+![](photos/logMonetary.png)
 
 ## Clustering Implementation
 For implementing customer segmentation, we're going to use K-Means Clustering.
@@ -65,14 +57,12 @@ In K-means, we must specify k, the number of clusters, although initially determ
 
 The silhouette score helps gauge the effectiveness of clustering algorithms like K-Means, by measuring how well each sample is grouped with other similar samples within its cluster. The silhouette coefficient, which ranges from -1 (indicating dissimilarity) to 1 (indicating similarity), is calculated for each sample across the different clusters.
 
-avg_silhouettescore.png
-
-elbow_method.png
+![](photos/elbowMethod.png)
 
 ### N=2 Cluster
 
-clusterDistribution.png
+![](photos/n2cluster.png)
 
 ### N=4 Cluster
 
-clusterDistribution2.png
+![](photos/n4cluster.png)
